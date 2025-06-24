@@ -5,11 +5,15 @@ import ErrorBoundary from './components/ErrorBoundary'
 
 const inter = Inter({ subsets: ['latin'] })
 
+const basePath = process.env.NODE_ENV === 'production' && process.env.GITHUB_PAGES === 'true' 
+  ? '/landing_page_RJLF' 
+  : ''
+
 export const metadata: Metadata = {
   title: 'RJLF AI Portal',
   description: 'Reichman Jorgensen Lehman & Feldberg LLP AI Integration Portal',
   icons: {
-    icon: '/rjlf_logo.png',
+    icon: `${basePath}/rjlf_logo.png`,
   },
 }
 

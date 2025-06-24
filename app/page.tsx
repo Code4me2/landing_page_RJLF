@@ -5,6 +5,9 @@ import Image from 'next/image'
 import PolicyModal from './components/PolicyModal'
 import BestPracticesModal from './components/BestPracticesModal'
 
+// Import the logo directly
+import logoImage from '../public/rjlf_logo.png'
+
 export default function Home() {
   const [showPolicy, setShowPolicy] = useState(false)
   const [showBestPractices, setShowBestPractices] = useState(false)
@@ -49,7 +52,7 @@ export default function Home() {
       <header className={`relative z-10 flex justify-center p-8 transition-all duration-1000 ${mounted ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'}`}>
         <div className="glass-logo rounded-2xl px-8 py-4 animate-glow-logo">
           <Image
-            src="/rjlf_logo.png"
+            src={logoImage}
             alt="Reichman Jorgensen Lehman & Feldberg LLP"
             width={600}
             height={200}
