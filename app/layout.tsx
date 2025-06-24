@@ -15,6 +15,9 @@ export const metadata: Metadata = {
   icons: {
     icon: `${basePath}/rjlf_logo.png`,
   },
+  other: {
+    'link rel="preload" as="image" href': `${basePath}/rjlf_logo.png`,
+  },
 }
 
 export default function RootLayout({
