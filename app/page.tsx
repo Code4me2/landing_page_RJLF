@@ -119,31 +119,12 @@ export default function Home() {
               <div className="absolute inset-0 border-2 border-white/20 rounded-xl group-hover:scale-105 transition-transform duration-300" />
             </button>
             
-            <a
-              href="https://claude.ai"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Open Claude AI in a new tab"
-              className={`group relative px-8 py-5 overflow-hidden rounded-xl transition-all duration-500 transform w-full lg:w-auto lg:min-w-[200px] hover:scale-105 active:scale-100 ${mounted ? 'translate-y-0 opacity-100 scale-100' : 'translate-y-10 opacity-0 scale-95'}`}
-              style={{ transitionDelay: '900ms' }}
-            >
-              <div className="absolute inset-0 glass" />
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
-              <span className="relative flex items-center gap-3 text-white font-semibold text-lg">
-                Use Claude
-                <svg className="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </span>
-              <div className="absolute inset-0 border border-accent-soft-gold/50 rounded-xl group-hover:border-accent-gold transition-colors duration-300" />
-            </a>
-            
             <button
               onClick={() => setShowBestPractices(true)}
               aria-label="View AI Best Practices"
               aria-haspopup="dialog"
               className={`group relative px-8 py-5 overflow-hidden rounded-xl transition-all duration-500 transform w-full lg:w-auto lg:min-w-[200px] hover:scale-105 active:scale-100 ${mounted ? 'translate-y-0 opacity-100 scale-100' : 'translate-y-10 opacity-0 scale-95'}`}
-              style={{ transitionDelay: '1100ms' }}
+              style={{ transitionDelay: '900ms' }}
             >
               <div className="absolute inset-0 bg-gradient-to-r from-accent-soft-gold via-accent-gold to-white opacity-90 group-hover:opacity-100 transition-all duration-700 ease-in-out" />
               <div className="absolute inset-0 bg-gradient-to-r from-white via-accent-gold to-accent-soft-gold opacity-0 group-hover:opacity-90 transition-all duration-700 ease-in-out" />
@@ -156,6 +137,25 @@ export default function Home() {
               <div className="absolute inset-0 border-2 border-white/20 rounded-xl group-hover:scale-105 transition-transform duration-300" />
             </button>
             
+            <a
+              href="https://claude.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Claude AI in a new tab"
+              className={`group relative px-8 py-5 overflow-hidden rounded-xl transition-all duration-500 transform w-full lg:w-auto lg:min-w-[200px] hover:scale-105 active:scale-100 ${mounted ? 'translate-y-0 opacity-100 scale-100' : 'translate-y-10 opacity-0 scale-95'}`}
+              style={{ transitionDelay: '1100ms' }}
+            >
+              <div className="absolute inset-0 glass" />
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+              <span className="relative flex items-center justify-center gap-3 text-white font-semibold text-lg">
+                Use Claude
+                <svg className="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </span>
+              <div className="absolute inset-0 border border-accent-soft-gold/50 rounded-xl group-hover:border-accent-gold transition-colors duration-300" />
+            </a>
+            
             <button
               aria-label="Aletheia"
               className={`group relative px-8 py-5 overflow-hidden rounded-xl transition-all duration-500 transform w-full lg:w-auto lg:min-w-[200px] hover:scale-105 active:scale-100 ${mounted ? 'translate-y-0 opacity-100 scale-100' : 'translate-y-10 opacity-0 scale-95'}`}
@@ -167,7 +167,7 @@ export default function Home() {
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                 </svg>
-                Aletheia
+                Aletheia-v0.1
               </span>
               <div className="absolute inset-0 border-2 border-white/20 rounded-xl group-hover:scale-105 transition-transform duration-300" />
             </button>
