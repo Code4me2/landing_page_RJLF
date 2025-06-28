@@ -148,16 +148,17 @@ export default function Home() {
               <div className="absolute inset-0 glass" />
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
               <span className="relative flex items-center justify-center gap-3 text-white font-semibold text-lg">
-                Use Claude
-                <svg className="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M17.5 3C19.433 3 21 4.567 21 6.5V17.5C21 19.433 19.433 21 17.5 21H6.5C4.567 21 3 19.433 3 17.5V6.5C3 4.567 4.567 3 6.5 3H17.5ZM17.5 4.5H6.5C5.396 4.5 4.5 5.396 4.5 6.5V17.5C4.5 18.604 5.396 19.5 6.5 19.5H17.5C18.604 19.5 19.5 18.604 19.5 17.5V6.5C19.5 5.396 18.604 4.5 17.5 4.5ZM15.178 8.75L12 15.5L8.822 8.75H10.5L12 11.75L13.5 8.75H15.178Z"/>
                 </svg>
+                Claude
               </span>
               <div className="absolute inset-0 border border-accent-soft-gold/50 rounded-xl group-hover:border-accent-gold transition-colors duration-300" />
             </a>
             
-            <button
-              aria-label="Aletheia"
+            <a
+              href="http://localhost:8080/chat"
+              aria-label="Open Aletheia chat"
               className={`group relative px-8 py-5 overflow-hidden rounded-xl transition-all duration-500 transform w-full lg:w-auto lg:min-w-[200px] hover:scale-105 active:scale-100 ${mounted ? 'translate-y-0 opacity-100 scale-100' : 'translate-y-10 opacity-0 scale-95'}`}
               style={{ transitionDelay: '1300ms' }}
             >
@@ -170,7 +171,7 @@ export default function Home() {
                 Aletheia-v0.1
               </span>
               <div className="absolute inset-0 border-2 border-white/20 rounded-xl group-hover:scale-105 transition-transform duration-300" />
-            </button>
+            </a>
           </div>
         </div>
       </div>
